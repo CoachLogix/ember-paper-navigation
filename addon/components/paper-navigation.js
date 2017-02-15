@@ -8,7 +8,7 @@ export default Component.extend(ParentMixin, {
   layout,
 
   backstack: computed(function(){
-    return ['home'];
+    return Ember.A(['home']);
   }),
 
   currentScreen: computed.alias('backstack.lastObject'),

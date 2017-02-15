@@ -1,0 +1,14 @@
+{{#paper-navigation as |navigation|}}
+  | <a {{action navigation.goToScreen "home"}}>Home</a>
+  | <a {{action navigation.goToScreen "about"}}>About</a>
+  | <a {{action navigation.goToScreen "help"}}>Help</a>
+  {{#navigation.home}}
+    <h1>Home</h1>
+  {{/navigation.home}}
+  {{#navigation.screen name="about"}}
+    <h1>About</h1>
+  {{/navigation.screen}}
+  {{#navigation.screen name="help"}}
+    <h1>Help</h1>
+  {{/navigation.screen}}
+{{/paper-navigation}}

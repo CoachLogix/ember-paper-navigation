@@ -20,7 +20,8 @@ export default Ember.Component.extend({
     if (!screenExists) {
       throw `'paper-navigation' tried to transition to a screen called ${name} which is not defined. Did you forget to add it?'`;
     } else {
-      this.get('navigation.backstack').pushObject(name);
+      let backstack = this.get('navigation.backstack');
+      backstack.pushObject(name);
     }
   },
 
