@@ -2,9 +2,9 @@ import Ember from 'ember';
 import layout from 'ember-paper-navigation/templates/components/paper-navigation/screen';
 import { ChildMixin } from 'ember-composability-tools';
 
-const { Component, computed } = Ember;
+const { Component } = Ember;
 
-export default Ember.Component.extend(ChildMixin, {
+export default Component.extend(ChildMixin, {
   layout,
 
   active: computed('name', 'parentComponent.currentScreen', function() {

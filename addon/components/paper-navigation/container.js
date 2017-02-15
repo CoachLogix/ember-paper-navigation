@@ -1,7 +1,9 @@
 import Ember from 'ember';
 import layout from 'ember-paper-navigation/templates/components/paper-navigation/container';
 
-export default Ember.Component.extend({
+const { Component } = Ember;
+
+export default Component.extend({
   layout,
 
   transitionEffect: null,
