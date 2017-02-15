@@ -2,5 +2,8 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-paper-settings'
+  name: 'ember-paper-navigation',
+  isDevelopingAddon() {
+    return true;
+  }
 };

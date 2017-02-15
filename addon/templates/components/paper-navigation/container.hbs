@@ -1,0 +1,9 @@
+{{#liquid-bind navigation.currentScreen use=transitionEffect class="demo-container" as |currentModel|}}
+  {{yield (hash
+    home=(component "paper-navigation/screen" name="home")
+    screen=(component "paper-navigation/screen")
+    goToScreen=(action goToScreen)
+    goBack=(action goBack)
+    linkTo=(action linkTo)
+  )}}
+{{/liquid-bind}}

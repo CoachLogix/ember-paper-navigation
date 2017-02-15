@@ -1,11 +1,11 @@
-# ember-paper-settings
+# ember-paper-navigation
 
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation
 
 * `git clone <repository-url>` this repository
-* `cd ember-paper-settings`
+* `cd ember-paper-navigation`
 * `npm install`
 * `bower install`
 
