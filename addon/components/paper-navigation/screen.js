@@ -2,7 +2,7 @@ import Ember from 'ember';
 import layout from 'ember-paper-navigation/templates/components/paper-navigation/screen';
 import { ChildMixin } from 'ember-composability-tools';
 
-const { Component } = Ember;
+const { Component, computed } = Ember;
 
 export default Component.extend(ChildMixin, {
   layout,
